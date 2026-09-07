@@ -26,8 +26,8 @@ export const NAV_LINKS = [
 
 export const HERO = {
   eyebrow: 'Assessoria jurídica · marketing e captação',
-  title: 'Sua próxima causa já está te procurando.',
-  titleEm: 'Ela só ainda não te achou.',
+  title: 'Mais clientes pro seu escritório,',
+  titleEm: 'com captação inteligente e IA.',
   lead:
     'Cuidamos das redes sociais, dos anúncios e do primeiro contato do seu escritório — com um agente de IA que qualifica e agenda por você, 24 horas por dia.',
 };
