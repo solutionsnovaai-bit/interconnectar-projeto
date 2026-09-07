@@ -20,20 +20,20 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/30 to-transparent" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/35 to-transparent" />
 
-      <div className="wrap relative flex min-h-[100svh] flex-col justify-end pb-16 pt-32 md:justify-center md:pb-28">
+      <div className="wrap relative flex min-h-[100svh] flex-col justify-end pb-14 pt-[50vh] sm:pt-[46vh] md:justify-center md:pb-28 md:pt-32">
         <div className="max-w-xl">
-          <span className="label reveal mb-6 inline-flex items-center gap-3 text-gold-400">
+          <span className="label reveal mb-4 inline-flex items-center gap-3 text-gold-400 md:mb-6">
             <i className="h-1.5 w-1.5 rounded-full bg-gold-500" />
             {HERO.eyebrow}
           </span>
 
-          <h1 className="h-display reveal mb-6 text-[clamp(34px,5.6vw,60px)] text-cream">
+          <h1 className="h-display reveal mb-4 text-[clamp(30px,5.6vw,60px)] text-cream md:mb-6">
             {HERO.title}
             <br />
             <em className="not-italic text-gold-400">{HERO.titleEm}</em>
           </h1>
 
-          <p className="reveal mb-9 max-w-md text-[15.5px] leading-relaxed text-cream/70">
+          <p className="reveal mb-7 max-w-md text-[14.5px] leading-relaxed text-cream/70 md:mb-9 md:text-[15.5px]">
             {HERO.lead}
           </p>
 
@@ -48,7 +48,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <ul className="reveal mt-12 flex flex-wrap gap-x-9 gap-y-5">
+          <ul className="reveal mt-8 flex flex-wrap gap-x-9 gap-y-5 md:mt-12">
             {HERO_STATS.map((s) => (
               <li key={s.label} className="flex flex-col gap-1.5">
                 <span className="font-display text-3xl text-gold-400">{s.n}</span>
