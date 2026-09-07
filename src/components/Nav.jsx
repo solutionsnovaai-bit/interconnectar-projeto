@@ -26,7 +26,7 @@ export default function Nav() {
       >
         <div className="wrap flex items-center gap-8">
           <a href="#topo" className="mr-auto flex items-center" aria-label="Início">
-            <img src="/assets/logo-full.jpg" alt={BRAND.full} className="h-8 w-auto rounded-sm sm:h-9" />
+            <img src="/assets/logo-full.jpg" alt={BRAND.full} className="h-10 w-auto rounded-sm sm:h-11" />
           </a>
 
           <ul className="hidden items-center gap-8 lg:flex">
