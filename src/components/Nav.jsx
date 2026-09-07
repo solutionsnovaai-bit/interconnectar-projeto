@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { BRAND, NAV_LINKS, waLink } from '../data/site';
-import Mark from './Mark';
 import { Wpp } from './Icons';
 
 export default function Nav() {
@@ -33,17 +32,14 @@ export default function Nav() {
                     ${stuck ? 'border-b border-navy-900/8 bg-paper/90 py-3 backdrop-blur-md' : 'py-5'}`}
       >
         <div className="wrap flex items-center gap-8">
-          <a href="#topo" className="mr-auto flex items-center gap-2.5" aria-label="Início">
-            <Mark className={`h-7 w-7 transition-colors duration-500 ${dark ? 'text-gold-400' : 'text-navy-900'}`} />
-            <span className={`font-display text-[19px] font-semibold tracking-tight transition-colors duration-500 ${dark ? 'text-cream' : 'text-navy-900'}`}>
-              {BRAND.name}
-            </span>
+          <a href="#topo" className="mr-auto flex items-center" aria-label="Início">
+            <img src="/assets/logo-full.jpg" alt={BRAND.full} className="h-8 w-auto rounded-sm sm:h-9" />
           </a>
 
           <ul className="hidden items-center gap-8 lg:flex">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
-                <a
+                
                   href={l.href}
                   className={`group relative py-1 text-[13.5px] font-medium transition-colors duration-500
                               ${dark ? 'text-cream/75 hover:text-cream' : 'text-navy-900/70 hover:text-navy-900'}`}
@@ -55,7 +51,7 @@ export default function Nav() {
             ))}
           </ul>
 
-          <a
+          
             href={waLink('Olá! Quero saber mais sobre os planos da Interconnectar.')}
             target="_blank"
             rel="noopener noreferrer"
@@ -83,7 +79,7 @@ export default function Nav() {
                     ${open ? 'visible opacity-100' : 'invisible opacity-0'}`}
       >
         {NAV_LINKS.map((l) => (
-          <a
+          
             key={l.href}
             href={l.href}
             onClick={() => setOpen(false)}
@@ -92,7 +88,7 @@ export default function Nav() {
             {l.label}
           </a>
         ))}
-        <a
+        
           href={waLink('Olá! Quero saber mais sobre os planos da Interconnectar.')}
           target="_blank"
           rel="noopener noreferrer"
