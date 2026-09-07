@@ -39,7 +39,7 @@ export default function Nav() {
           <ul className="hidden items-center gap-8 lg:flex">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
-                
+                <a
                   href={l.href}
                   className={`group relative py-1 text-[13.5px] font-medium transition-colors duration-500
                               ${dark ? 'text-cream/75 hover:text-cream' : 'text-navy-900/70 hover:text-navy-900'}`}
@@ -51,7 +51,7 @@ export default function Nav() {
             ))}
           </ul>
 
-          
+          <a
             href={waLink('Olá! Quero saber mais sobre os planos da Interconnectar.')}
             target="_blank"
             rel="noopener noreferrer"
@@ -79,7 +79,7 @@ export default function Nav() {
                     ${open ? 'visible opacity-100' : 'invisible opacity-0'}`}
       >
         {NAV_LINKS.map((l) => (
-          
+          <a
             key={l.href}
             href={l.href}
             onClick={() => setOpen(false)}
@@ -88,7 +88,7 @@ export default function Nav() {
             {l.label}
           </a>
         ))}
-        
+        <a
           href={waLink('Olá! Quero saber mais sobre os planos da Interconnectar.')}
           target="_blank"
           rel="noopener noreferrer"
