@@ -38,12 +38,7 @@ export default function Hero() {
           </p>
 
           <div className="reveal flex flex-wrap gap-3">
-            
-              href={waLink('Olá! Quero saber mais sobre os planos da Interconnectar.')}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-gold"
-            >
+            <a href={waLink('Olá! Quero saber mais sobre os planos da Interconnectar.')} target="_blank" rel="noopener noreferrer" className="btn btn-gold">
               <Wpp className="h-4 w-4" />
               Falar no WhatsApp
             </a>
