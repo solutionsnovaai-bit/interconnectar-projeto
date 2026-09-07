@@ -1,15 +1,11 @@
 import { METODO } from '../data/site';
 import SectionHead from './SectionHead';
-import GhostText from './GhostText';
+import Mark from './Mark';
 
 export default function Metodo() {
   return (
     <section id="metodo" className="relative overflow-hidden bg-navy-950 py-20 text-cream md:py-32">
-      <div className="pointer-events-none absolute inset-x-0 -bottom-[6%] overflow-hidden text-center">
-        <GhostText tone="light" className="inline-block text-[19vw] leading-none md:text-[12vw]">
-          MÉTODO
-        </GhostText>
-      </div>
+      <Mark className="pointer-events-none absolute -right-[8%] bottom-[-10%] h-[45vw] w-[45vw] max-w-[440px] text-cream opacity-[0.04]" />
       <div className="pointer-events-none absolute left-1/2 top-1/3 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold-600/10 blur-[120px]" />
 
       <div className="wrap relative">
