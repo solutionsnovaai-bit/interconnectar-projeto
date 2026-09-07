@@ -12,7 +12,7 @@ export default function Hero() {
       <img
         src="/assets/hero-mobile.jpg"
         alt="Interconnectar Assessoria Jurídica"
-        className="absolute inset-0 h-full w-full object-cover object-[50%_20%] md:hidden"
+        className="absolute inset-0 h-full w-full object-cover object-[50%_8%] md:hidden"
         fetchPriority="high"
       />
       <div className="wrap relative flex min-h-[100svh] flex-col justify-end pb-14 pt-[68vh] sm:pt-[60vh] md:justify-center md:pb-28 md:pt-32">
