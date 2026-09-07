@@ -18,18 +18,11 @@ export default function Nav() {
     return () => { document.body.style.overflow = ''; };
   }, [open]);
 
-  // no topo (sobre o hero escuro) o texto precisa ser claro; depois de
-  // rolar, a nav ganha fundo claro e o texto vira escuro. Com o drawer
-  // mobile aberto, força sempre o modo claro-sobre-escuro — o drawer é
-  // todo navy por baixo, então a nav tem que combinar com ele, não com
-  // a posição de scroll de antes de abrir.
-  const dark = !stuck || open;
-
   return (
     <>
       <nav
-        className={`fixed inset-x-0 top-0 z-[80] transition-all duration-500 ease-soft
-                    ${stuck ? 'border-b border-navy-900/8 bg-paper/90 py-3 backdrop-blur-md' : 'py-5'}`}
+        className={`fixed inset-x-0 top-0 z-[80] bg-navy-950 transition-all duration-500 ease-soft
+                    ${stuck ? 'border-b border-cream/8 py-3 shadow-[0_10px_30px_-15px_rgba(0,0,0,.5)]' : 'py-5'}`}
       >
         <div className="wrap flex items-center gap-8">
           <a href="#topo" className="mr-auto flex items-center" aria-label="Início">
@@ -41,8 +34,7 @@ export default function Nav() {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className={`group relative py-1 text-[13.5px] font-medium transition-colors duration-500
-                              ${dark ? 'text-cream/75 hover:text-cream' : 'text-navy-900/70 hover:text-navy-900'}`}
+                  className="group relative py-1 text-[13.5px] font-medium text-cream/75 transition-colors duration-500 hover:text-cream"
                 >
                   {l.label}
                   <span className="absolute inset-x-0 -bottom-0.5 h-px origin-left scale-x-0 bg-gold-500 transition-transform duration-300 ease-soft group-hover:scale-x-100" />
@@ -67,8 +59,8 @@ export default function Nav() {
             aria-label="Menu"
             aria-expanded={open}
           >
-            <i className={`h-px w-5 transition-all duration-300 ${dark ? 'bg-cream' : 'bg-navy-900'} ${open ? 'translate-y-[3.5px] rotate-45' : ''}`} />
-            <i className={`h-px w-5 transition-all duration-300 ${dark ? 'bg-cream' : 'bg-navy-900'} ${open ? '-translate-y-[3.5px] -rotate-45' : ''}`} />
+            <i className={`h-px w-5 bg-cream transition-all duration-300 ${open ? 'translate-y-[3.5px] rotate-45' : ''}`} />
+            <i className={`h-px w-5 bg-cream transition-all duration-300 ${open ? '-translate-y-[3.5px] -rotate-45' : ''}`} />
           </button>
         </div>
       </nav>
