@@ -1,14 +1,11 @@
 import { SERVICOS } from '../data/site';
 import SectionHead from './SectionHead';
+import Mark from './Mark';
 
 export default function Servicos() {
   return (
     <section id="servicos" className="relative overflow-hidden py-20 md:py-32">
-      <div className="pointer-events-none absolute -right-[4%] top-24 overflow-hidden opacity-70 md:top-20">
-        <span className="ghost-text block text-[19vw] leading-none text-navy-900/[0.16] md:text-[10.5vw]">
-          SERVIÇOS
-        </span>
-      </div>
+      <Mark className="pointer-events-none absolute -right-[6%] top-16 h-[40vw] w-[40vw] max-w-[400px] text-navy-900 opacity-[0.045]" />
 
       <div className="wrap relative">
         <SectionHead
