@@ -17,9 +17,6 @@ export default function Hero() {
         fetchPriority="high"
       />
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/30 to-transparent" />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/35 to-transparent" />
-
       <div className="wrap relative flex min-h-[100svh] flex-col justify-end pb-14 pt-[60vh] sm:pt-[55vh] md:justify-center md:pb-28 md:pt-32">
         <div className="max-w-xl">
           <span className="label reveal mb-4 inline-flex items-center gap-3 text-gold-400 md:mb-6">
