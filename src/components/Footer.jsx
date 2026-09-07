@@ -1,5 +1,4 @@
 import { BRAND, NAV_LINKS, waLink } from '../data/site';
-import Mark from './Mark';
 import { Instagram, Wpp } from './Icons';
 
 export default function Footer() {
@@ -8,9 +7,8 @@ export default function Footer() {
     <footer className="bg-navy-950 pt-16 text-cream/65">
       <div className="wrap grid gap-10 pb-14 sm:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-2">
-          <a href="#topo" className="mb-5 flex items-center gap-2.5">
-            <Mark className="h-7 w-7 text-gold-500" />
-            <span className="font-display text-lg font-semibold text-cream">{BRAND.name}</span>
+          <a href="#topo" className="mb-5 inline-block">
+            <img src="/assets/logo-full.jpg" alt={BRAND.full} className="h-10 w-auto rounded-sm" />
           </a>
           <p className="max-w-xs text-[14px] leading-relaxed text-cream/50">
             Marketing e captação para escritórios de advocacia — redes sociais,
