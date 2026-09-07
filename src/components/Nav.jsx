@@ -21,7 +21,7 @@ export default function Nav() {
   return (
     <>
       <nav
-        className={`fixed inset-x-0 top-0 z-[80] bg-navy-950 transition-all duration-500 ease-soft
+        className={`fixed inset-x-0 top-0 z-[80] bg-navy-900 transition-all duration-500 ease-soft
                     ${stuck ? 'border-b border-cream/8 py-3 shadow-[0_10px_30px_-15px_rgba(0,0,0,.5)]' : 'py-5'}`}
       >
         <div className="wrap flex items-center gap-8">
