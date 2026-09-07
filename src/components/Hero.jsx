@@ -1,6 +1,5 @@
 import { HERO, HERO_STATS, waLink } from '../data/site';
 import { ArrowRight, Wpp } from './Icons';
-import GhostText from './GhostText';
 
 export default function Hero() {
   return (
@@ -18,14 +17,8 @@ export default function Hero() {
         fetchPriority="high"
       />
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/75 to-navy-950/25" />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-950/55 to-transparent" />
-
-      <div className="pointer-events-none absolute inset-x-0 bottom-[10%] hidden overflow-hidden md:block">
-        <GhostText tone="gold" className="block text-[13vw] leading-none">
-          INTERCONNECTAR
-        </GhostText>
-      </div>
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/30 to-transparent" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/35 to-transparent" />
 
       <div className="wrap relative flex min-h-[100svh] flex-col justify-end pb-16 pt-32 md:justify-center md:pb-28">
         <div className="max-w-xl">
@@ -45,7 +38,7 @@ export default function Hero() {
           </p>
 
           <div className="reveal flex flex-wrap gap-3">
-            <a
+            
               href={waLink('Olá! Quero saber mais sobre os planos da Interconnectar.')}
               target="_blank"
               rel="noopener noreferrer"
